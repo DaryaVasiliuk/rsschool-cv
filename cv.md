@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CV
 ## Darya Vasiliuk
 ## Junior Frontend Developer 
@@ -31,3 +32,6 @@
     
 #### Language:
 * English B1    
+=======
+
+>>>>>>> 2c37ac99318a3710b32fdf8450d771fb2b802145
