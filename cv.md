@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # CV
 ## Darya Vasiliuk
 ## Junior Frontend Developer 
@@ -21,6 +21,19 @@
 * Jira, FIGMA
   
 #### Code Examples:
+    const showHideIcons = () => {
+        let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+        arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+        arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+    }
+
+    arrowIcons.forEach(icon => {
+        icon.addEventListener("click", () => {
+            let firstImgWidth = firstImg.clientWidth + 14;
+            carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+            setTimeout(() => showHideIcons(), 60);
+        })
+    });
 
 #### Work Experience:
     No work experience, doing my own writing projects
@@ -32,6 +45,3 @@
     
 #### Language:
 * English B1    
-=======
-
->>>>>>> 2c37ac99318a3710b32fdf8450d771fb2b802145
